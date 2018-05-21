@@ -78,7 +78,7 @@ export const subMenus = {
     home: [
         { key: '/app/home/index', title: '首页' },
         { key: '/app/home/student', title: '学员' },
-        { key: '/app/home/class', title: '班级' },
+        { key: '/app/class/index', title: '班级' },
         { key: '/app/home/course', title: '课程' },
         { key: '/app/home/it', title: '教务' },
     ],

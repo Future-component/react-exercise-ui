@@ -32,6 +32,7 @@ import MapUi from '../components/ui/map';
 import Home from '../pages/home/Home';
 import Staff from '../pages/staff/Staff';
 import Foreign from '../pages/foreign/Foreign';
+import Class from '../pages/class/Class';
 
 const WysiwygBundle = (props) => (
     <Bundle load={Wysiwyg}>
@@ -54,6 +55,7 @@ export default class CRouter extends Component {
                 <Route exact path="/app/home/index" component={Home} />
                 <Route exact path="/app/staff/index" component={Staff} />
                 <Route exact path="/app/foreign/index" component={Foreign} />
+                <Route exact path="/app/class/index" component={Class} />
 
                 <Route exact path="/app/dashboard/index" component={Dashboard} />
                 <Route exact path="/app/form/basicForm" component={BasicForm} />
