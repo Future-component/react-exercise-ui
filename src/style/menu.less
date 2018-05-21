@@ -1,0 +1,98 @@
+.custom-theme {
+  background: @us-color-0 !important;
+  color: #fff !important;
+}
+.custom-theme .ant-menu {
+  background: none !important;
+  color: #fff !important;
+}
+.custom-theme .ant-menu-item-group-title {
+  color: #fff !important;
+}
+
+.ant-menu {
+  &.ant-menu-inline {
+    .ant-menu-item-selected {
+      background-color: #F2F5FA !important;
+    }
+  }
+}
+.ant-menu-item:active, .ant-menu-submenu-title:active {
+  background: none !important;
+}
+.ant-menu-item > a {
+  color: #5974A0 !important;
+}
+.ant-menu-item-selected > a, .ant-menu-item-selected > a:hover {
+  color: #3399FF !important;
+}
+.ant-menu-horizontal > .ant-menu-item:hover, .ant-menu-horizontal > .ant-menu-submenu:hover, .ant-menu-horizontal > .ant-menu-item-active, .ant-menu-horizontal > .ant-menu-submenu-active, .ant-menu-horizontal > .ant-menu-item-open, .ant-menu-horizontal > .ant-menu-submenu-open, .ant-menu-horizontal > .ant-menu-item-selected, .ant-menu-horizontal > .ant-menu-submenu-selected {
+  border-bottom: 4px solid #01AAFE !important;
+  color: #01AAFE !important;
+}
+.custom-trigger {
+  font-size: 18px;
+  line-height: 64px;
+  padding: 0 16px;
+  cursor: pointer;
+  transition: color .3s;
+}
+.ant-layout-sider-collapsed {
+  overflow-y: initial !important;
+}
+.avatar {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  line-height: 1;
+  border-radius: 500px;
+  white-space: nowrap;
+  font-weight: bold;
+  i {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 10px;
+    height: 10px;
+    margin: 1px;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 100%;
+    &.bottom {
+      left: auto;
+      top: auto;
+      bottom: 0;
+      right: 0;
+    }
+    &.on {
+      background-color: #6cc788;
+    }
+  }
+  img {
+    border-radius: 500px;
+    width: 100%;
+  }
+}
+.switcher {
+  z-index: 1050;
+  position: fixed;
+  top: 78px;
+  right: -240px;
+  width: 240px;
+  transition: right 0.2s ease;
+  border: 1px solid rgba(120, 120, 120, 0.1);
+  background-clip: padding-box;
+  &.active {
+    right: -2px;
+  }
+  .sw-btn {
+    position: absolute;
+    left: -43px;
+    top: -1px;
+    padding: 10px 15px;
+    z-index: 1045;
+    border: 1px solid rgba(120, 120, 120, 0.1);
+    border-right-width: 0;
+    background-clip: padding-box;
+  }
+}
